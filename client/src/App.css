@@ -1,0 +1,28 @@
+body {
+  background: var(--bs-tertiary-bg);
+}
+
+.dropzone {
+  border: 2px dashed var(--bs-border-color);
+  background: var(--bs-body-bg);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.dropzone:hover,
+.dropzone.dragging {
+  border-color: var(--bs-primary);
+  background: var(--bs-primary-bg-subtle);
+}
+
+.dropzone:focus-visible {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 2px;
+}
+
+.summary-text {
+  white-space: pre-line;
+  line-height: 1.75;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
